@@ -26,8 +26,28 @@ Ou publique com **GitHub Pages**:
 2. Em "Source", selecione a branch `main` e a pasta `/root`.
 3. Salve — o site fica disponível em `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
 
+## SEO e indexação no Google
+
+O repositório já vem pronto para indexação, sem precisar de domínio próprio:
+
+- `sitemap.xml` e `robots.txt` na raiz, apontando para `https://brennohs.github.io/wordfuse/`.
+- Meta tags de SEO (description, keywords, Open Graph, canonical, hreflang) já no `index.html`.
+
+Depois de publicar no GitHub Pages:
+
+1. Acesse [Google Search Console](https://search.google.com/search-console) e adicione a propriedade `https://brennohs.github.io/wordfuse/`.
+2. Verifique a propriedade (o Search Console oferece um método de verificação por meta tag HTML — cole a tag que ele fornecer dentro do `<head>` do `index.html`).
+3. Em "Sitemaps", envie `sitemap.xml`.
+4. Use "Inspeção de URL" para pedir indexação manual da página inicial (acelera o processo).
+5. Indexação costuma levar de alguns dias a poucas semanas depois disso.
+
+Domínio próprio **não é necessário** — o `github.io` funciona normalmente para indexação. Um domínio custom (via `CNAME`) só ajuda com branding/memorização, não é requisito técnico para o Google indexar.
+
 ## Estrutura
 - `index.html` — página completa (HTML + CSS + JS + dicionários embutidos).
+- `sitemap.xml` — mapa do site para o Google.
+- `robots.txt` — permissões de rastreamento.
+
 
 ## Como adicionar palavras
 
