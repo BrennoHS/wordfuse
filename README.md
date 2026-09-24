@@ -21,6 +21,11 @@ Digite uma sílaba e encontre instantaneamente palavras compostas e raras — fe
 open index.html
 ```
 
+Ou publique com **GitHub Pages**:
+1. Vá em `Settings > Pages` no seu repositório.
+2. Em "Source", selecione a branch `main` e a pasta `/root`.
+3. Salve — o site fica disponível em `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
+
 ## Estrutura
 - `index.html` — página completa (HTML + CSS + JS + dicionários embutidos).
 
